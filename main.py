@@ -3,6 +3,8 @@ from discord.commands import SlashCommandGroup, option
 from discord.ext import commands
 import json
 import traceback
+from keep_alive import keep_alive
+
 
 file = open("config.json", "r", encoding="utf-8")
 configData = json.load(file)
